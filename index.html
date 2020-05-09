@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="positive or negative">
+    <meta name="keywords" content="positive,negative,numbers">
+    <meta name="author" content="devin-jhu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positive or negative</title>
+  </head>
+  <body>
+    <p>Positive or negative</p>
+    <p>Enter a number and see if its positive or negative</p>
+    Number:<input type="number" id="usernumber"><br>
+    <button onclick="number()">calculate</button><br>
+    <script>
+      let usernumber;
+      function number() {
+        usernumber=document.getElementById("usernumber").value;
+        if (usernumber<0) {
+          alert ("the number is negative");
+        }
+        else if (usernumber>0) {
+          alert ("the number is positive");
+        }
+        else if (usernumber==0) {
+          alert ("the number is not positive or negative");
+        }
+      }
+    </script>
+  </body>
+</html>
